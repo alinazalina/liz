@@ -1,0 +1,15 @@
+build_ziggurat <- function(n) {
+  b <- n+1
+  z <- 2*n-1
+  m <- matrix(1,z,z)
+  m
+  if (n==1){
+    m
+  }else{
+    for (i in 1:(2*n-b)){
+      m[(1+i):(z-i),(1+i):(z-i)] <- 1+i
+      
+    }
+  }
+  return(m)
+}
